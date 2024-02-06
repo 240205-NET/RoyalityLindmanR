@@ -1,0 +1,14 @@
+D:\Revature\240205-NET\Trainer_Code\w1\FirstNET\bin\Debug\net7.0\FirstNET.exe
+D:\Revature\240205-NET\Trainer_Code\w1\FirstNET\bin\Debug\net7.0\FirstNET.deps.json
+D:\Revature\240205-NET\Trainer_Code\w1\FirstNET\bin\Debug\net7.0\FirstNET.runtimeconfig.json
+D:\Revature\240205-NET\Trainer_Code\w1\FirstNET\bin\Debug\net7.0\FirstNET.dll
+D:\Revature\240205-NET\Trainer_Code\w1\FirstNET\bin\Debug\net7.0\FirstNET.pdb
+D:\Revature\240205-NET\Trainer_Code\w1\FirstNET\obj\Debug\net7.0\FirstNET.GeneratedMSBuildEditorConfig.editorconfig
+D:\Revature\240205-NET\Trainer_Code\w1\FirstNET\obj\Debug\net7.0\FirstNET.AssemblyInfoInputs.cache
+D:\Revature\240205-NET\Trainer_Code\w1\FirstNET\obj\Debug\net7.0\FirstNET.AssemblyInfo.cs
+D:\Revature\240205-NET\Trainer_Code\w1\FirstNET\obj\Debug\net7.0\FirstNET.csproj.CoreCompileInputs.cache
+D:\Revature\240205-NET\Trainer_Code\w1\FirstNET\obj\Debug\net7.0\FirstNET.dll
+D:\Revature\240205-NET\Trainer_Code\w1\FirstNET\obj\Debug\net7.0\refint\FirstNET.dll
+D:\Revature\240205-NET\Trainer_Code\w1\FirstNET\obj\Debug\net7.0\FirstNET.pdb
+D:\Revature\240205-NET\Trainer_Code\w1\FirstNET\obj\Debug\net7.0\FirstNET.genruntimeconfig.cache
+D:\Revature\240205-NET\Trainer_Code\w1\FirstNET\obj\Debug\net7.0\ref\FirstNET.dll
