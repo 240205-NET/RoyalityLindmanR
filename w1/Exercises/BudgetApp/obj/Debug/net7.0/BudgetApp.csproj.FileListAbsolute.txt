@@ -1,4 +1,0 @@
-D:\Revature\240205-NET\RoyalityLindmanR\w1\Exercises\BudgetApp\obj\Debug\net7.0\BudgetApp.GeneratedMSBuildEditorConfig.editorconfig
-D:\Revature\240205-NET\RoyalityLindmanR\w1\Exercises\BudgetApp\obj\Debug\net7.0\BudgetApp.AssemblyInfoInputs.cache
-D:\Revature\240205-NET\RoyalityLindmanR\w1\Exercises\BudgetApp\obj\Debug\net7.0\BudgetApp.AssemblyInfo.cs
-D:\Revature\240205-NET\RoyalityLindmanR\w1\Exercises\BudgetApp\obj\Debug\net7.0\BudgetApp.csproj.CoreCompileInputs.cache
