@@ -1,0 +1,14 @@
+D:\Revature\240205-NET\RoyalityLindmanR\w1\Banking\bin\Debug\net7.0\Banking.exe
+D:\Revature\240205-NET\RoyalityLindmanR\w1\Banking\bin\Debug\net7.0\Banking.deps.json
+D:\Revature\240205-NET\RoyalityLindmanR\w1\Banking\bin\Debug\net7.0\Banking.runtimeconfig.json
+D:\Revature\240205-NET\RoyalityLindmanR\w1\Banking\bin\Debug\net7.0\Banking.dll
+D:\Revature\240205-NET\RoyalityLindmanR\w1\Banking\bin\Debug\net7.0\Banking.pdb
+D:\Revature\240205-NET\RoyalityLindmanR\w1\Banking\obj\Debug\net7.0\Banking.GeneratedMSBuildEditorConfig.editorconfig
+D:\Revature\240205-NET\RoyalityLindmanR\w1\Banking\obj\Debug\net7.0\Banking.AssemblyInfoInputs.cache
+D:\Revature\240205-NET\RoyalityLindmanR\w1\Banking\obj\Debug\net7.0\Banking.AssemblyInfo.cs
+D:\Revature\240205-NET\RoyalityLindmanR\w1\Banking\obj\Debug\net7.0\Banking.csproj.CoreCompileInputs.cache
+D:\Revature\240205-NET\RoyalityLindmanR\w1\Banking\obj\Debug\net7.0\Banking.dll
+D:\Revature\240205-NET\RoyalityLindmanR\w1\Banking\obj\Debug\net7.0\refint\Banking.dll
+D:\Revature\240205-NET\RoyalityLindmanR\w1\Banking\obj\Debug\net7.0\Banking.pdb
+D:\Revature\240205-NET\RoyalityLindmanR\w1\Banking\obj\Debug\net7.0\Banking.genruntimeconfig.cache
+D:\Revature\240205-NET\RoyalityLindmanR\w1\Banking\obj\Debug\net7.0\ref\Banking.dll

@@ -1,0 +1,20 @@
+Name: Lawrence 	 Height: 72 in. 	 Age: 28
+
+Name: Lawrence 	 Height: 72 in. 	 Age: 28
+
+Name: Lawrence 	 Height: 72 in. 	 Age: 28
+
+Name: Lawrence 	 Height: 72 in. 	 Age: 28
+
+Name: Lawrence 	 Height: 72 in. 	 Age: 28
+
+<?xml version="1.0" encoding="utf-16"?>
+<Person xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>Lawrence</name>
+  <height>72</height>
+  <age>28</age>
+</Person>
+Name: Lawrence 	 Height: 72 in. 	 Age: 28
+
+Name: Lawrence 	 Height: 72 in. 	 Age: 28
+

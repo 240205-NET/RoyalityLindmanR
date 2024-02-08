@@ -1,0 +1,14 @@
+D:\Revature\240205-NET\RoyalityLindmanR\p1\RockPaperScissors\obj\Debug\net7.0\RockPaperScissors.GeneratedMSBuildEditorConfig.editorconfig
+D:\Revature\240205-NET\RoyalityLindmanR\p1\RockPaperScissors\obj\Debug\net7.0\RockPaperScissors.AssemblyInfoInputs.cache
+D:\Revature\240205-NET\RoyalityLindmanR\p1\RockPaperScissors\obj\Debug\net7.0\RockPaperScissors.AssemblyInfo.cs
+D:\Revature\240205-NET\RoyalityLindmanR\p1\RockPaperScissors\obj\Debug\net7.0\RockPaperScissors.csproj.CoreCompileInputs.cache
+D:\Revature\240205-NET\RoyalityLindmanR\p1\RockPaperScissors\bin\Debug\net7.0\RockPaperScissors.exe
+D:\Revature\240205-NET\RoyalityLindmanR\p1\RockPaperScissors\bin\Debug\net7.0\RockPaperScissors.deps.json
+D:\Revature\240205-NET\RoyalityLindmanR\p1\RockPaperScissors\bin\Debug\net7.0\RockPaperScissors.runtimeconfig.json
+D:\Revature\240205-NET\RoyalityLindmanR\p1\RockPaperScissors\bin\Debug\net7.0\RockPaperScissors.dll
+D:\Revature\240205-NET\RoyalityLindmanR\p1\RockPaperScissors\bin\Debug\net7.0\RockPaperScissors.pdb
+D:\Revature\240205-NET\RoyalityLindmanR\p1\RockPaperScissors\obj\Debug\net7.0\RockPaperScissors.dll
+D:\Revature\240205-NET\RoyalityLindmanR\p1\RockPaperScissors\obj\Debug\net7.0\refint\RockPaperScissors.dll
+D:\Revature\240205-NET\RoyalityLindmanR\p1\RockPaperScissors\obj\Debug\net7.0\RockPaperScissors.pdb
+D:\Revature\240205-NET\RoyalityLindmanR\p1\RockPaperScissors\obj\Debug\net7.0\RockPaperScissors.genruntimeconfig.cache
+D:\Revature\240205-NET\RoyalityLindmanR\p1\RockPaperScissors\obj\Debug\net7.0\ref\RockPaperScissors.dll
