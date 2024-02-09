@@ -17,6 +17,7 @@ namespace RockPaperScissors {
                 int choice = -1;
 
                 //messaging to allow player to continue or quit
+                Console.WriteLine("--------------------------");
                 Console.WriteLine("Enter 1 to keep playing or 0 to end");
 
                 bool correctChoice = false;
@@ -41,7 +42,8 @@ namespace RockPaperScissors {
                             correctChoice = true;
                             break;
                         default:
-                            Console.WriteLine("incorrect choice, choose again");
+                            Console.WriteLine("--------------------------");
+                            Console.WriteLine("incorrect choice, choose 1 to continue or 0 to quit");
                             break;
                         }
 

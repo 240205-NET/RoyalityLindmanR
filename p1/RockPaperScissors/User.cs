@@ -3,25 +3,28 @@ namespace RockPaperScissors {
         //fields
         public int wins {get; set;}
         public int losses {get; set;}
+        public int draws {get; set;}
         
 
         //constructor
-        public User (string name, int wins = 0, int losses = 0) {
+        public User (string name, int wins = 0, int losses = 0, int draws = 0) {
             this.name = name;
             this.wins = wins;
             this.losses = losses;
+            this.draws = draws;
         }
 
         //methods
 
-        public int getWins() {return this.wins;}
-        public void setWins(int wins) {
-            this.wins = wins;
-        }
+        // public int getWins() {return this.wins;}
+        // public void setWins(int wins) {
+        //     this.wins = wins;
+        // }
 
         public int playGame() {
 
             //set up
+            Console.WriteLine("--------------------------");
             Console.WriteLine("Please choose:");
             Console.WriteLine("1 for rock");
             Console.WriteLine("2 for paper");
@@ -37,6 +40,7 @@ namespace RockPaperScissors {
                 } catch (Exception e) {
                     Console.WriteLine(e.Message);
                 }
+                Console.WriteLine("--------------------------");
 
                 // switch for user choices
                 switch (choice) {
@@ -53,11 +57,12 @@ namespace RockPaperScissors {
                         correctChoice = !correctChoice;
                         return choice;
                     default:
-                        Console.WriteLine("incorrect choice, choose again");
+                        Console.WriteLine("incorrect choice, choose 1 for rock, 2 for paper, 3 for scissors");
                         break;
                 }
             }
              return 0;
         }
+
     }
 }

@@ -29,22 +29,33 @@ namespace RockPaperScissors {
             int cpuChoice = cpu.playGame();
 
             if (playerChoice == cpuChoice) {
+                //draw
                 Console.WriteLine("it's a draw");
+                player1.draws += 1;
+
             } else if (playerChoice == 1 && cpuChoice == 3) {
                 //player wins
                 Console.WriteLine("PLAYER wins");
                 player1.wins += 1;
+
             } else if (cpuChoice == 1 && playerChoice == 3) {
                 //cpu wins
                 Console.WriteLine("CPU wins");
+                player1.losses += 1;
+
             }else if (playerChoice > cpuChoice) {
                 //player wins
                 Console.WriteLine("PLAYER wins");
                 player1.wins += 1;
+
             } else {
                 //cpu wins
                 Console.WriteLine("CPU wins");
+                player1.losses += 1;
             }
+
+            Console.WriteLine("--------------------------");
+            Console.WriteLine(player1.name + "'s wins: " + player1.wins + " / losses: " + player1.losses);
             //Console.WriteLine("playerchoice = " + playerChoice + " ------ cpu choice " + cpuChoice);
         }
     }
