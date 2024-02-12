@@ -1,11 +1,16 @@
 namespace RockPaperScissors {
-    class Cpu : Player {
+    public class Cpu : Player {
         //fields
         int difficulty = 0;
         Random rd = new Random();
 
         //constructor
         public Cpu () {}
+
+        public override string toString()
+        {
+            return "Cpu";
+        }
 
         //methods
         public int playGame() {

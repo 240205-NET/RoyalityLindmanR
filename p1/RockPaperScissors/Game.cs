@@ -55,7 +55,7 @@ namespace RockPaperScissors {
             }
 
             Console.WriteLine("--------------------------");
-            Console.WriteLine(player1.name + "'s wins: " + player1.wins + " / losses: " + player1.losses);
+            Console.WriteLine(player1.toString());
             //Console.WriteLine("playerchoice = " + playerChoice + " ------ cpu choice " + cpuChoice);
         }
     }

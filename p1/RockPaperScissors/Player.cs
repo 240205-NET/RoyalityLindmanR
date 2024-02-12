@@ -1,7 +1,7 @@
 namespace RockPaperScissors {
 
     //abstract player class
-    abstract class Player {
+    public abstract class Player {
         //fields
         public string? name;
         
@@ -10,6 +10,7 @@ namespace RockPaperScissors {
     
 
         //methods
+        public abstract string toString();
         
         
     }

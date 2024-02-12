@@ -1,5 +1,5 @@
 namespace RockPaperScissors {
-    class User : Player {
+    public class User : Player {
         //fields
         public int wins {get; set;}
         public int losses {get; set;}
@@ -20,8 +20,12 @@ namespace RockPaperScissors {
         // public void setWins(int wins) {
         //     this.wins = wins;
         // }
+        public override string toString()
+        {
+            return $"Player\nName: {this.name}\nWins: {this.wins}\nLosses: {this.losses}\nDraws: {this.draws}\n";
+        }
 
-        public int playGame() {
+        public int playGame(int choice = -1) {
 
             //set up
             Console.WriteLine("--------------------------");
@@ -30,7 +34,7 @@ namespace RockPaperScissors {
             Console.WriteLine("2 for paper");
             Console.WriteLine("3 for scissors");
 
-            int choice = -1;
+            //int choice = -1;
             bool correctChoice = false;
 
             while(!correctChoice) {
