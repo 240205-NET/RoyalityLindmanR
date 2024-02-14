@@ -1,18 +1,22 @@
+using System.Xml.Serialization;
+
 namespace RockPaperScissors {
     public class User : Player {
         //fields
         public int wins {get; set;}
         public int losses {get; set;}
         public int draws {get; set;}
-        
+        private XmlSerializer Serializer = new XmlSerializer(typeof(User));
 
         //constructor
+        public User() {}
         public User (string name, int wins = 0, int losses = 0, int draws = 0) {
             this.name = name;
             this.wins = wins;
             this.losses = losses;
             this.draws = draws;
         }
+        
 
         //methods
 
@@ -66,6 +70,32 @@ namespace RockPaperScissors {
                 }
             }
              return 0;
+        }
+
+        public string SerializeXML()
+        {
+            var stringWriter = new StringWriter();
+            Serializer.Serialize(stringWriter, this);
+            stringWriter.Close();
+            return stringWriter.ToString();
+        }
+        public User Deserialize(string path) {
+            User u = new User();
+            if(!File.Exists(path)) {
+                Console.WriteLine("file not found");
+                return null;
+            } else {
+                using StreamReader reader = new StreamReader(path);
+                var record = (User)Serializer.Deserialize(reader);
+                if(record is null) {
+                    throw new InvalidDataException();
+                    return null;
+                } else {
+                    u = record;
+                }
+                return u;
+            }
+            
         }
 
     }

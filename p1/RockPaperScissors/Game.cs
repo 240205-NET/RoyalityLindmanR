@@ -1,7 +1,9 @@
+using System.Xml.Serialization;
+
 namespace RockPaperScissors {
     public class Game {
         //fields
-        List<User> userList = new List<User>();
+        //List<User> userList = new List<User>();
         User? player1;
         Cpu? cpu;
 
@@ -18,12 +20,65 @@ namespace RockPaperScissors {
             cpu = new Cpu();
 
             //TODO add ability to write list to file/ read from file/ and check if name is on file
+            //save player to file
+            string[] text = {player1.toString()};
+            string path = @".\UserFile.txt";
 
-            Console.WriteLine("adding " + player1.name + " to user list");
-            userList.Add(player1);
+            string stringChoice = "";
+            bool correctChoice = false;
+            //write to file
+            if(File.Exists(path)) {
+                Console.WriteLine("file found");
+                //ask to override
+                /*string[] readText = File.ReadAllLines(path);
 
-            Console.WriteLine(userList[0].name);
+                foreach (string s in readText) {
+                    Console.WriteLine(s);
+                }*/
+                try {
+                    Console.WriteLine((player1.Deserialize(path)).toString());
+                    Console.WriteLine("is this you? y/n");
+                    while(!correctChoice) {
+                        try {
+                            stringChoice = Console.ReadLine();
+                        } catch (Exception e) {
+                            Console.WriteLine(e.Message);
+                        }
+                        Console.WriteLine("--------------------------");
+
+                        switch (stringChoice) {
+                            case "y":
+                                //deserialize object
+                                player1 = player1.Deserialize(path);
+                                Console.WriteLine("loading data for " + player1.name);
+                                correctChoice = true;
+                                break;
+                            case "n":
+                                Console.WriteLine("creating new data");
+                                File.WriteAllLines(path, text);
+                                Console.WriteLine("adding " + player1.name + " to file");
+                                correctChoice = true;
+                                break;
+                            default:
+                                Console.WriteLine("Invalid option, please type y or n");
+                                break;
+
+                        }
+                    }
+                    } catch (Exception e) {
+                        Console.WriteLine("No content");
+                        File.WriteAllLines(path, text);
+                        Console.WriteLine("adding " + player1.name + " to file");
+                    }
+
+                
+
+            } else {
+                File.WriteAllLines(path, text);
+                Console.WriteLine("adding " + player1.name + " to file");
+            }
         }
+        
         public void PlayGame() {
             int playerChoice = player1.playGame();
             int cpuChoice = cpu.playGame();
@@ -57,6 +112,45 @@ namespace RockPaperScissors {
             Console.WriteLine("--------------------------");
             Console.WriteLine(player1.toString());
             //Console.WriteLine("playerchoice = " + playerChoice + " ------ cpu choice " + cpuChoice);
+        }
+        public string[] SaveGame() {
+        
+            /*var stringWriter = new StringWriter();
+            Serializer.Serialize(stringWriter, player1);
+            stringWriter.Close();*/
+
+        
+            string[] text = {player1.SerializeXML()};
+            return text;
+        }
+
+        public void SaveGameOutput() {
+            User u = new User();
+            string path = @".\UserFile.txt";
+            XmlSerializer Serializer = new XmlSerializer(typeof(User));
+
+
+            if(!File.Exists(path)) {
+                Console.WriteLine("file not found");
+                return;
+            } else {
+                using StreamReader reader = new StreamReader(path);
+                var record = (User)Serializer.Deserialize(reader);
+                if(record is null) {
+                    throw new InvalidDataException();
+                    return;
+                } else {
+                    u = record;
+                }
+                
+                //ending output
+                Console.WriteLine("Name: " + u.name);
+                Console.WriteLine("Wins: " + u.wins);
+                Console.WriteLine("losses: " + u.losses);
+                Console.WriteLine("draws: " + u.draws);
+                
+            }
+            
         }
     }
 }

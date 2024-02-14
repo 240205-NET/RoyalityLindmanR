@@ -15,7 +15,7 @@ namespace RockPaperScissors {
         //methods
         public int playGame() {
             //difficulty 0
-            int randomNum = rd.Next(1,3);
+            int randomNum = rd.Next(1,4);
 
             switch (randomNum) {
                 case 1:
