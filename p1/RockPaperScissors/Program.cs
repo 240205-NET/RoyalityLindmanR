@@ -8,6 +8,9 @@ namespace RockPaperScissors {
             Game game = new Game();
             bool playing = true;
 
+            //display opening for game
+            Console.WriteLine(game.displayOpening());
+
             //call start game method
             game.StartGame();
 
@@ -18,7 +21,7 @@ namespace RockPaperScissors {
 
                 //messaging to allow player to continue or quit
                 Console.WriteLine("--------------------------");
-                Console.WriteLine("Enter 1 to keep playing or 0 to end");
+                Console.WriteLine("Enter 1 to keep playing, 7 for rules, or 0 to end");
 
                 bool correctChoice = false;
 
@@ -51,9 +54,13 @@ namespace RockPaperScissors {
                             Console.WriteLine("continuing...");
                             correctChoice = true;
                             break;
+                        case 7:
+                            Console.WriteLine(game.displayRules());
+                            Console.WriteLine("choose 1 to continue, 7 for rules, or 0 to quit");
+                            break;
                         default:
                             Console.WriteLine("--------------------------");
-                            Console.WriteLine("incorrect choice, choose 1 to continue or 0 to quit");
+                            Console.WriteLine("incorrect choice, choose 1 to continue, 7 for rules, or 0 to quit");
                             break;
                         }
 

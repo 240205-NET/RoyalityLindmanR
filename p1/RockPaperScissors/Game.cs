@@ -29,6 +29,7 @@ namespace RockPaperScissors {
             //write to file
             if(File.Exists(path)) {
                 Console.WriteLine("file found");
+                Console.WriteLine("--------------------------");
                 //ask to override
                 /*string[] readText = File.ReadAllLines(path);
 
@@ -66,7 +67,7 @@ namespace RockPaperScissors {
                         }
                     }
                     } catch (Exception e) {
-                        Console.WriteLine("No content");
+                        Console.WriteLine("No compatible content");
                         File.WriteAllLines(path, text);
                         Console.WriteLine("adding " + player1.name + " to file");
                     }
@@ -151,6 +152,14 @@ namespace RockPaperScissors {
                 
             }
             
+        }
+        public string displayOpening() {
+            string opening = "*-------------------------------*\n*-*Welcome to Console Fighter*-*\n*-------------------------------*";
+            return opening;
+        }
+        public string displayRules() {
+            string rules = "*----------------------------------------------*\n*--------------------Rules---------------------*\n*-Press 1 for low. Low beats high attacks------*\n*-Press 2 for medium. Medium beats low attacks-*\n*-Press 3 for high. High beats medium attacks--*\n*----------------------------------------------*";
+            return rules;
         }
     }
 }
