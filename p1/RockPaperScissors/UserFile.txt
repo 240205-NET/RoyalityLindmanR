@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-16"?>
 <User xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <name>hello there my dude</name>
-  <wins>14</wins>
-  <losses>5</losses>
-  <draws>9</draws>
+  <name>YO</name>
+  <wins>4</wins>
+  <losses>4</losses>
+  <draws>3</draws>
 </User>

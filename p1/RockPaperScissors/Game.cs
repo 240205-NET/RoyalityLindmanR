@@ -78,7 +78,7 @@ namespace RockPaperScissors {
                 Console.WriteLine("adding " + player1.name + " to file");
             }
         }
-        
+
         public void PlayGame() {
             int playerChoice = player1.playGame();
             int cpuChoice = cpu.playGame();
@@ -90,7 +90,7 @@ namespace RockPaperScissors {
 
             } else if (playerChoice == 1 && cpuChoice == 3) {
                 //player wins
-                Console.WriteLine("PLAYER wins");
+                Console.WriteLine(player1.name + " wins");
                 player1.wins += 1;
 
             } else if (cpuChoice == 1 && playerChoice == 3) {
@@ -100,7 +100,7 @@ namespace RockPaperScissors {
 
             }else if (playerChoice > cpuChoice) {
                 //player wins
-                Console.WriteLine("PLAYER wins");
+                Console.WriteLine(player1.name + " wins");
                 player1.wins += 1;
 
             } else {

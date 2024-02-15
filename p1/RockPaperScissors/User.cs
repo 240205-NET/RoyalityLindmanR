@@ -34,9 +34,9 @@ namespace RockPaperScissors {
             //set up
             Console.WriteLine("--------------------------");
             Console.WriteLine("Please choose:");
-            Console.WriteLine("1 for rock");
-            Console.WriteLine("2 for paper");
-            Console.WriteLine("3 for scissors");
+            Console.WriteLine("1 for low attack");
+            Console.WriteLine("2 for medium attack");
+            Console.WriteLine("3 for high attack");
 
             //int choice = -1;
             bool correctChoice = false;
@@ -53,19 +53,19 @@ namespace RockPaperScissors {
                 // switch for user choices
                 switch (choice) {
                     case 1:
-                        Console.WriteLine("you chose rock");
+                        Console.WriteLine("you chose low attack");
                         correctChoice = !correctChoice;
                         return choice;
                     case 2:
-                        Console.WriteLine("you chose paper");
+                        Console.WriteLine("you chose medium attack");
                         correctChoice = !correctChoice;
                         return choice;
                     case 3:
-                        Console.WriteLine("you chose scissors");
+                        Console.WriteLine("you chose high attack");
                         correctChoice = !correctChoice;
                         return choice;
                     default:
-                        Console.WriteLine("incorrect choice, choose 1 for rock, 2 for paper, 3 for scissors");
+                        Console.WriteLine("incorrect choice, choose 1 for low, 2 for medium, 3 for high");
                         break;
                 }
             }

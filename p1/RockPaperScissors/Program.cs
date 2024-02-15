@@ -33,6 +33,7 @@ namespace RockPaperScissors {
                     //switch for user choices
                     switch (choice) {
                         case 0:
+                            Console.WriteLine("--------------------------");
                             Console.WriteLine("saving data");
                             // write to file
                             string[] text = game.SaveGame();

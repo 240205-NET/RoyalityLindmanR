@@ -19,13 +19,13 @@ namespace RockPaperScissors {
 
             switch (randomNum) {
                 case 1:
-                    Console.WriteLine("cpu chose rock");
+                    Console.WriteLine("cpu chose low attack");
                     break;
                 case 2:
-                    Console.WriteLine("cpu chose paper");
+                    Console.WriteLine("cpu chose medium attack");
                     break;
                 case 3:
-                    Console.WriteLine("cpu chose scissors");
+                    Console.WriteLine("cpu chose high attack");
                     break;
             }
             return randomNum;
