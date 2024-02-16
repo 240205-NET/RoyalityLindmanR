@@ -36,6 +36,7 @@ namespace RockPaperScissors {
                     //switch for user choices
                     switch (choice) {
                         case 0:
+                            //quitting
                             Console.WriteLine("--------------------------");
                             Console.WriteLine("saving data");
                             // write to file
@@ -51,10 +52,12 @@ namespace RockPaperScissors {
                             playing = false;
                             break;
                         case 1:
+                            //continuing
                             Console.WriteLine("continuing...");
                             correctChoice = true;
                             break;
                         case 7:
+                            //rules
                             Console.WriteLine(game.displayRules());
                             Console.WriteLine("choose 1 to continue, 7 for rules, or 0 to quit");
                             break;

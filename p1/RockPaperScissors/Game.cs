@@ -38,7 +38,7 @@ namespace RockPaperScissors {
                 }*/
                 try {
                     Console.WriteLine((player1.Deserialize(path)).toString());
-                    Console.WriteLine("is this you? y/n");
+                    Console.WriteLine("is this you? y/n  (y to load data, n to create and override save data)");
                     while(!correctChoice) {
                         try {
                             stringChoice = Console.ReadLine();
@@ -139,7 +139,7 @@ namespace RockPaperScissors {
                 var record = (User)Serializer.Deserialize(reader);
                 if(record is null) {
                     throw new InvalidDataException();
-                    return;
+                    //return;
                 } else {
                     u = record;
                 }
