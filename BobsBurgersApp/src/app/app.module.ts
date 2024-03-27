@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { CharacterComponent } from './character/character.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http';
+import { VideoComponent } from './video/video.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     NavbarComponent,
     HttpClientModule,
-    AppComponent
+    AppComponent,
+    VideoComponent
   ]
 })
 export class AppModule { }
