@@ -1,0 +1,28 @@
+<header>
+    <button><a routerLink="/">Home</a></button>
+    <button><a routerLink="/character">Character</a></button>
+</header>
+
+<body>
+<div class="tableDiv">
+    <h1 class = "title1"> Characters!</h1>
+    <table id = "character-table" class="table table-striped table-hover">
+        <thead>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Image</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let character of characters">
+                
+                <td>{{character.id}}</td>
+                <td><a target = "blank" href="{{character.wikiUrl}}">{{character.name}}</a></td>
+                <td class ="image"><img src = "{{character.image}}" width = 150pt height = 200pt></td>
+            </tr>
+        </tbody>
+
+
+    </table>
+</div>
+
+</body>
