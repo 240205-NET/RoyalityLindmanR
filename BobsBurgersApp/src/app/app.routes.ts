@@ -4,6 +4,8 @@ import { AppComponent } from './app.component';
 import { CharacterComponent } from './character/character.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { VideoComponent } from './video/video.component';
+import { RandomCharacterComponent } from './random-character/random-character.component';
+
 
 export const routes: Routes = [
     {
@@ -17,6 +19,11 @@ export const routes: Routes = [
     {
         path: 'video',
         component: VideoComponent,
+    },
+    {
+        path: 'random',
+        component: RandomCharacterComponent
     }
+    
 ];
 

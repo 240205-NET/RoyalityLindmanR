@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterModule } from '@angular/router';
+import { OnInit } from '@angular/core';
+import { RouterLink, RouterModule, Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from '../home/home.component';
 import { CharacterComponent } from '../character/character.component';
@@ -15,5 +16,21 @@ import { routes } from '../app.routes'
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+  constructor(private router: Router) {}
+
+  homeClick() {
+    this.router.navigate(['/']);
+  }
+  characterClick() {
+    this.router.navigate(['/character']);
+  }
+  videoClick() {
+    this.router.navigate(['/video']);
+  }
+  randomClick() {
+    this.router.navigate(['random']);
+  }
+
+  
 
 }

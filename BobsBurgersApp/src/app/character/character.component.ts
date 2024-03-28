@@ -22,7 +22,7 @@ export class CharacterComponent implements OnInit {
     characters : any = [];
     
 
-  constructor(private characterService : CharacterService) {}
+  constructor(private characterService : CharacterService, private router: Router) {}
 
   ngOnInit(): void {
     this.fetchCharacters();
@@ -32,6 +32,19 @@ export class CharacterComponent implements OnInit {
       console.log(data);
       this.characters = data;
     })
+  }
+
+  homeClick() {
+    this.router.navigate(['/']);
+  }
+  characterClick() {
+    this.router.navigate(['/character']);
+  }
+  videoClick() {
+    this.router.navigate(['/video']);
+  }
+  randomClick() {
+    this.router.navigate(['random']);
   }
  }
 

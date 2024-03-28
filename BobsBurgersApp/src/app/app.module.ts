@@ -7,6 +7,7 @@ import { CharacterComponent } from './character/character.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { VideoComponent } from './video/video.component';
+import { RandomCharacterComponent } from './random-character/random-character.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { VideoComponent } from './video/video.component';
     NavbarComponent,
     HttpClientModule,
     AppComponent,
-    VideoComponent
+    VideoComponent,
+    RandomCharacterComponent
   ]
 })
 export class AppModule { }
